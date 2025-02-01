@@ -11,7 +11,8 @@
     <style>
         /* Общие стили */
         body, html {
-            margin: 0;
+            margin: 40px auto;
+			text-align: center;
             padding: 0;
             font-family: 'Montserrat', sans-serif;
             overflow-x: hidden; /* Скрываем горизонтальную прокрутку */
@@ -19,10 +20,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-image: url('background.png'); /* Путь к фоновому изображению */
-            background-size: cover; /* Растягиваем изображение на весь экран */
-            background-position: center; /* Центрируем изображение */
-            background-attachment: fixed; /* Фон остаётся на месте при прокрутке */
+            background: url('video.mp4');
+			background-size: cover;
             color: #fff; /* Белый текст для контраста */
 			
         }
@@ -36,7 +35,17 @@
             text-align: center; /* Центрируем текст */
 			overflow: hidden;
         }
-
+		.bgvideo {
+		  position: fixed;
+		  right: 0;
+		  bottom: 0;
+		  min-width: 100%;
+		  min-height: 100%;
+		  width: auto;
+		  height: auto;
+		  z-index: -9999;
+		  color: #4080bf;
+		}
         /* Логотип игры */
         .game-logo {
             max-width: 100%;
@@ -48,6 +57,7 @@
 			border-radius: 5px;
 			margin-top: 20px; /* Отступ сверху */
 			padding: 20px; /* Внутренние отступы */
+			
 		}
         /* Текст под логотипом */
         .text {
@@ -78,7 +88,11 @@
             padding: 10px;
             border-radius: 5px;
 			text-align: left;
+			transition: background-color 0.3s ease; /* Плавные переходы */
         }
+		.text_end:hover{
+			background-color: rgba(128, 74, 0, 0.5); /* Прозрачность фона при наведении */
+		}
 		.spacer {
             height: 100px; /* Высота дополнительного пространства */
         }
@@ -109,6 +123,7 @@
 
         .button:hover {
             background-color: rgba(255, 255, 255, 0.2); /* Прозрачность фона при наведении */
+			
         }
 
         .button img {
@@ -219,6 +234,10 @@
     </style>
 </head>
 <body>
+	<video autoplay loop muted class="bgvideo" id="bgvideo">
+	<source src="video.mp4" type="video/mp4"></source>
+	</video>
+	
     <div class="container">
         <!-- Логотип игры -->
         <img src="game_logo.png" alt="Логотип игры" class="game-logo">
@@ -310,7 +329,22 @@
             <div class="button-text">Available on Windows and Android!</div>
         </div>
 		
-		<div class="spacer"></div>
+		<div class="spacer">
+		
+		</div>
+		<!-- Кнопка с иконкой -->
+        <div class="button-container">
+            <button class="button">
+                <a href="https://soundcloud.com/vngames-468515564" class="button">
+					<img src="sc_icon.png" alt="Иконка">
+				</a>
+            </button>
+            <div class="button-text">Game soundtrack</div>
+        </div>
+		
+		<div class="spacer">
+		
+		</div>
     </div>
 	
 	
