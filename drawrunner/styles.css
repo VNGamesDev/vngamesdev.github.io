@@ -1,0 +1,100 @@
+/* Подключение шрифта Pangolin */
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+/* Основные стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pangolin', cursive;
+    color: white;
+    background-image: url('drawland.png'); /* Замените на путь к вашему изображению */
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0); /* Полупрозрачный фон для текста */
+    padding: 20px;
+    border-radius: 10px;
+	width: 90%;
+	max-width: 1200px;
+}
+
+.content-text {
+    background-color: rgba(0, 0, 0, 0.2); /* Полупрозрачный фон для текста */
+    padding: 20px;
+    border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.content img {
+	width: 100%;
+    height: auto;
+    max-width: 1200px;
+   
+	margin-bottom: 50px;
+}
+
+.text {
+	margin-bottom: 10px; /* Отступ сверху */
+    font-size: 24px;
+	padding: 0;
+}
+
+.text-big {
+	margin-bottom: 10px; /* Отступ сверху */
+    font-size: 34px;
+	padding: 0;
+}
+
+.text-bigger {
+	margin-bottom: 10px; /* Отступ сверху */
+    font-size: 42px;
+	padding: 0;
+	color: rgba(255, 220, 0, 1);
+}
+
+.img-inside-text {
+	margin-top: 30px;
+	width: 100%;
+    height: 100%; /* Высота должна быть задана */
+    object-fit: cover; /* Обрезает изображение, сохраняя пропорции */
+}
+
+.button-container {
+    position: relative;
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    width: 50%; /* Ширина контейнера */
+    height: auto;
+}
+
+.button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    padding: 0; /* Убираем внутренние отступы */
+    cursor: pointer;
+    display: block; /* Делаем кнопку блочным элементом */
+    width: 100%; /* Ширина кнопки равна ширине контейнера */
+    height: auto; /* Высота определяется содержимым */
+    transition: background-color 0.3s ease;
+    text-align: center; /* Центрирование текста внутри кнопки */
+}
+
+.button:hover {
+    background-color: rgba(255, 220, 0, 0.2); /* Прозрачность фона при наведении */
+}
+
+.button img {
+    display: block; /* Убираем отступ снизу */
+    width: 100%; /* Растягиваем изображение на всю ширину кнопки */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 10px; /* Скругление углов изображения */
+}

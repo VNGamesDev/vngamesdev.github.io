@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrawRunner: Classic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Pangolin', cursive;
+            color: white;
+            text-align: center;
+			overflow: hidden;
+        }
+
+        .background {
+            background-image: url('background.png');
+            background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content {
+           background-color: rgba(0, 0, 0, 0); /* Полупрозрачный фон для текста */
+			padding: 20px;
+			border-radius: 10px;
+			width: 90%;
+			max-width: 1200px;
+        }
+		
+		.content img{
+			width: 100%;
+			height: auto;
+			max-width: 1200px;
+		}
+		
+		.text {
+			color: black;
+			font-size: 36px;
+			
+			width: 100%;
+			height: auto;
+			max-width: 1200px;
+
+		}
+
+        .center-image {
+            width: 700px; /* Размер изображения по центру */
+			height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        
+        <div class="content">
+		<img src="logo.png" alt="Лого" class="center-image"> <!-- Замените на путь к вашему изображению -->
+            <div class="text">Скоро!</div>
+        </div>
+    </div>
+</body>
+</html>
