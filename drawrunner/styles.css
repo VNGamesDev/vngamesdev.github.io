@@ -76,7 +76,7 @@ body {
 }
 
 .button {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     border: none;
     border-radius: 10px;
     padding: 0; /* Убираем внутренние отступы */
@@ -89,7 +89,7 @@ body {
 }
 
 .button:hover {
-    background-color: rgba(255, 220, 0, 0.2); /* Прозрачность фона при наведении */
+    background-color: rgba(55, 40, 0, 0.5); /* Прозрачность фона при наведении */
 }
 
 .button img {
